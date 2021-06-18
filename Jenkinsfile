@@ -4,12 +4,12 @@ pipeline {
    stages {
       stage('Checkout') {
          steps {
-            git 'https://github.com/AnjuMeleth/hello-world-java.git'
+            git 'https://github.com/Yuvaranjani123/hello-world-java.git'
          }
       }
       stage('Build'){
         steps {
-            bat 'javac HelloWorld.java'
+            sh 'javac HelloWorld.java'
         }
       }
    }
